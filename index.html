@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="metaTitle">AnthemCup — Premium Israeli Anthem Mug</title>
+    <title id="metaTitle">IsraelAnthemCup — Premium Israeli Anthem Mug</title>
     <meta name="description" content="Premium 11 oz ceramic mug showcasing the Israeli flag and the full text of HaTikvah, Israel's national anthem displayed in both Hebrew and English.">
 
     <!-- Link preview (what appears when the site address is shared in WhatsApp, Facebook, Telegram, iMessage...).
          These tags must stay in the HTML itself: the apps read them without running the page's scripts. -->
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="AnthemCup">
-    <meta property="og:title" content="AnthemCup — Premium Israeli Anthem Mug">
+    <meta property="og:site_name" content="IsraelAnthemCup">
+    <meta property="og:title" content="IsraelAnthemCup — Premium Israeli Anthem Mug">
     <meta property="og:description" content="Premium 11 oz ceramic mug showcasing the Israeli flag and the full text of HaTikvah, Israel's national anthem displayed in both Hebrew and English.">
     <meta property="og:image" content="https://i.imgur.com/lJXGDZt.jpeg">
-    <meta property="og:image:alt" content="AnthemCup Israeli anthem mug with the Israeli flag">
+    <meta property="og:image:alt" content="IsraelAnthemCup Israeli anthem mug with the Israeli flag">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="AnthemCup — Premium Israeli Anthem Mug">
+    <meta name="twitter:title" content="IsraelAnthemCup — Premium Israeli Anthem Mug">
     <meta name="twitter:description" content="Premium 11 oz ceramic mug showcasing the Israeli flag and the full text of HaTikvah, Israel's national anthem displayed in both Hebrew and English.">
     <meta name="twitter:image" content="https://i.imgur.com/lJXGDZt.jpeg">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -93,7 +93,7 @@
     <header class="border-b border-gray-100 sticky top-0 bg-white/90 backdrop-blur-md z-40">
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-                <span id="txt_brandName" class="text-2xl font-extrabold tracking-tight text-gray-900">Anthem<span class="text-indigo-600">Cup</span></span>
+                <span id="txt_brandName" class="text-2xl font-extrabold tracking-tight text-gray-900">IsraelAnthem<span class="text-indigo-600">Cup</span></span>
             </div>
             <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-600">
                 <a href="#shop" class="hover:text-indigo-600 transition-colors">Shop</a>
@@ -117,6 +117,21 @@
         <!-- The mugs are drawn here by JavaScript (renderProducts) -->
         <!-- Moving picture strip (drawn by JavaScript, see renderShowcase) -->
         <div id="showcase" class="hidden mb-14 lg:mb-20"></div>
+        <!--DESIGNPROMO-START-->
+        <section id="designPromo" class="hidden mb-14 lg:mb-20 rounded-3xl overflow-hidden bg-gradient-to-br from-indigo-900 via-indigo-800 to-violet-700 text-white shadow-2xl">
+            <div class="grid lg:grid-cols-2 gap-0 items-center">
+                <div class="p-8 sm:p-12 space-y-5 text-center lg:text-left">
+                    <span class="inline-block text-xs font-extrabold uppercase tracking-widest bg-white text-indigo-700 px-4 py-1.5 rounded-full">✨ Make It Yours</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Your Design. Your Mug.</h2>
+                    <p class="text-indigo-100 text-base sm:text-lg">Upload your photos, pick your color and create a one-of-a-kind mug in minutes. The perfect personal gift, for any occasion.</p>
+                    <button onclick="openDesigner()" class="px-7 py-4 rounded-2xl bg-white text-indigo-700 hover:bg-indigo-50 text-base font-extrabold shadow-xl transition-all">🎨 Create Your Own Design</button>
+                </div>
+                <div class="bg-black/20">
+                    <video id="designPromoVideo" class="w-full block" src="media/create-your-design.mp4" poster="media/create-your-design-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Short video showing how to create your own mug design"></video>
+                </div>
+            </div>
+        </section>
+        <!--DESIGNPROMO-END-->
         <div id="productsContainer" class="space-y-20 lg:space-y-28"></div>
     </main>
 
@@ -134,7 +149,7 @@
                 </h2>
             </div>
             <p id="txt_statementDesc" class="text-blue-100 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-medium">
-                Every AnthemCup is a daily affirmation of identity, hope, and solidarity. The opening words of HaTikvah — Israel's national anthem — remind us that the hope of two thousand years lives on. In your hands. Every morning.
+                Every IsraelAnthemCup is a daily affirmation of identity, hope, and solidarity. The opening words of HaTikvah — Israel's national anthem — remind us that the hope of two thousand years lives on. In your hands. Every morning.
             </p>
             <div class="pt-4 pb-2">
                 <div class="inline-block p-8 bg-white text-gray-900 rounded-3xl shadow-2xl border-4 border-blue-600/30 space-y-4 max-w-xl w-full">
@@ -159,7 +174,7 @@
                     <span id="reviewsAvgText" class="text-sm font-extrabold text-gray-700 tracking-wide">Rated 5 / 5</span>
                 </div>
                 <h2 id="txt_revHeading" class="text-3xl font-extrabold text-gray-900">Loved by Travelers Worldwide</h2>
-                <p id="txt_revSub" class="text-gray-600 mt-3 text-base">Read real reviews from creators and explorers who never leave home without their AnthemCup.</p>
+                <p id="txt_revSub" class="text-gray-600 mt-3 text-base">Read real reviews from creators and explorers who never leave home without their IsraelAnthemCup.</p>
                 <button id="writeReviewBtn" onclick="openReviewForm()" class="hidden mt-4 px-6 py-3 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold text-sm shadow-md transition-all">✍️ Write a review / add photos</button>
             </div>
             <div class="relative flex items-center group">
@@ -223,7 +238,7 @@
             <span id="txt_missionTag" class="text-xs font-extrabold uppercase tracking-widest bg-indigo-800 text-indigo-200 px-3 py-1 rounded-full">Our Purpose</span>
             <h2 id="txt_missionTitle" class="text-3xl sm:text-4xl font-extrabold">Crafted for Your Next Great Adventure</h2>
             <p id="txt_missionDesc" class="text-indigo-200 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
-                We believe that every journey deserves great fuel. AnthemCup was born from a passion for exploration, combining uncompromising durability with clean, modern design.
+                We believe that every journey deserves great fuel. IsraelAnthemCup was born from a passion for exploration, combining uncompromising durability with clean, modern design.
             </p>
         </div>
     </section>
@@ -231,12 +246,12 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
-            <span class="text-xl font-extrabold tracking-tight">Anthem<span class="text-indigo-400">Cup</span></span>
+            <span class="text-xl font-extrabold tracking-tight">IsraelAnthem<span class="text-indigo-400">Cup</span></span>
             <div id="contact" class="text-center sm:text-left">
                 <p class="text-[11px] font-bold uppercase tracking-wider text-gray-500">Contact us</p>
                 <a id="contactEmailLink" href="mailto:" class="text-sm font-bold text-white hover:text-indigo-300 underline break-all"></a>
             </div>
-            <p id="txt_footer" class="text-sm text-gray-400">© 2026 AnthemCup Store. All rights reserved. Dynamic Admin System.</p>
+            <p id="txt_footer" class="text-sm text-gray-400">© 2026 IsraelAnthemCup Store. All rights reserved. Dynamic Admin System.</p>
         </div>
     </footer>
 
@@ -1236,6 +1251,11 @@
                     <h4 class="text-sm font-extrabold text-gray-900">1. Order email notifications</h4>
                     <p class="text-xs text-gray-600">Every new order is sent to your inbox. Create a free account at <b>web3forms.com</b>: type your email address and your <b>Access Key</b> arrives by email. Paste it here. The email is the main record of each order on the live site, so keep it safe.</p>
                     <input type="text" id="adminOrderNotifyKey" autocomplete="off" spellcheck="false" placeholder="Web3Forms Access Key" class="w-full px-3 py-2.5 rounded-xl border border-gray-300 text-xs font-mono bg-white">
+                    <label class="flex items-start gap-2 text-xs font-bold text-gray-800 cursor-pointer">
+                        <input type="checkbox" id="adminCustomerEmail" onchange="saveCustomerEmailToggle()" class="mt-0.5 w-4 h-4">
+                        <span>Also email an order confirmation to the customer (order details, total, and the name, email, phone and address they entered). <span class="font-normal text-gray-600">This needs the <b>Web3Forms Pro</b> plan with the Autoresponder turned on, see the note below.</span></span>
+                    </label>
+                    <p class="text-[11px] text-gray-500">In your Web3Forms dashboard open this form, then Form Settings, and turn on <b>Autoresponder</b>. Turn on "Show copy of their submission in the email". Without the Pro plan the customer gets nothing, and you only get one extra copy of each confirmation.</p>
                     <div class="flex flex-wrap gap-2">
                         <button onclick="saveOrderNotifyKey()" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold">Save key</button>
                         <button onclick="sendTestOrderEmail()" class="px-4 py-2 rounded-xl bg-gray-800 hover:bg-black text-white text-xs font-bold">Send test email</button>
@@ -1277,17 +1297,17 @@
     <!-- Core Store Script -->
     <script>
         const defaultTexts = {
-            announcement: "🇮🇱 Printed to order · Shipped to your door",
+            announcement: "🌍 Free Worldwide Shipping on Orders Over $50 | 100% Satisfaction Guarantee",
             statementTag: "Meaningful Design",
             statementTitle: "More Than a Mug. A Statement.",
-            statementDesc: "Every AnthemCup is a daily affirmation of identity, hope, and solidarity. The opening words of HaTikvah — Israel's national anthem — remind us that the hope of two thousand years lives on. In your hands. Every morning.",
+            statementDesc: "Every IsraelAnthemCup is a daily affirmation of identity, hope, and solidarity. The opening words of HaTikvah — Israel's national anthem — remind us that the hope of two thousand years lives on. In your hands. Every morning.",
             statementQuoteHe: '"כל עוד בלבב פנימה, נפש יהודי הומיה"',
             statementQuoteEn: '"As long as within the heart, a Jewish soul yearns"',
-            brandName: 'Anthem<span class="text-indigo-600">Cup</span>',
+            brandName: 'IsraelAnthem<span class="text-indigo-600">Cup</span>',
             badge: "Signature Edition",
-            productTitle: "Israel National Anthem Mug",
+            productTitle: "IsraelAnthemCup Travel Mug",
             oldPrice: "$29.99",
-            productDesc: "Premium 11 oz ceramic mug showcasing the Israeli flag and the full text of HaTikvah, Israel's national anthem, displayed in both Hebrew and English.",
+            productDesc: "Designed for active creators and world travelers. Features premium double-wall vacuum insulation to keep beverages piping hot for 12 hours or ice-cold for 24 hours.",
             styleLabel: "Select Style:",
             sizeLabel: "Select Size:",
             badge1Title: "🛡️ Secure Pay",
@@ -1297,7 +1317,7 @@
             badge3Title: "✨ Lifetime",
             badge3Sub: "Quality Guarantee",
             revHeading: "Loved by Travelers Worldwide",
-            revSub: "Read real reviews from creators and explorers who never leave home without their AnthemCup.",
+            revSub: "Read real reviews from creators and explorers who never leave home without their IsraelAnthemCup.",
             contactEmail: "shalomdahar@gmail.com",
             r1Text: "Kept my coffee hot for an entire 6-hour flight across Europe. Absolute game changer!",
             r1Author: "— Liam S., Travel Vlogger",
@@ -1309,8 +1329,8 @@
             r4Author: "",
             missionTag: "Our Purpose",
             missionTitle: "Crafted for Your Next Great Adventure",
-            missionDesc: "We believe that every journey deserves great fuel. AnthemCup was born from a passion for exploration, combining uncompromising durability with clean, modern design.",
-            footer: "© 2026 AnthemCup Store. All rights reserved. Dynamic Admin System."
+            missionDesc: "We believe that every journey deserves great fuel. IsraelAnthemCup was born from a passion for exploration, combining uncompromising durability with clean, modern design.",
+            footer: "© 2026 IsraelAnthemCup Store. All rights reserved. Dynamic Admin System."
         };
 
         const defaultWallets = {
@@ -1326,18 +1346,28 @@
             orderNotifyKey: '',
             wallets: { ...defaultWallets },
             texts: defaultTexts,
-            reviews: [],
+            reviews: [
+                { text: "Kept my coffee hot for an entire 6-hour flight across Europe. Absolute game changer!", author: "— Liam S., Travel Vlogger" },
+                { text: "The build quality is stunning. The matte finish feels incredible and it truly never leaks.", author: "— Maya R., Photographer" },
+                { text: "Fast shipping and gorgeous packaging. I bought two more as gifts for my friends.", author: "— Daniel K., Explorer" }
+            ],
             variants: [
-                {
-                    name: 'Classic White',
+                { 
+                    name: 'Classic White', 
                     color: '#ffffff',
                     images: [
-                        'mugs/israel-anthem-1.jpg',
-                        'mugs/israel-anthem-2.jpg',
-                        'mugs/israel-anthem-3.jpg',
-                        'mugs/israel-anthem-4.jpg',
-                        'mugs/israel-anthem-5.jpg'
-                    ]
+                        'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1000&q=80', 
+                        'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=1000&q=80', 
+                        'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=1000&q=80'
+                    ] 
+                },
+                { 
+                    name: 'Volcanic Black', 
+                    color: '#111827',
+                    images: [
+                        'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=1000&q=80', 
+                        'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1000&q=80'
+                    ] 
                 }
             ],
             destinations: [
@@ -1371,8 +1401,8 @@
         // ================= Supabase (your server) =================
         // SUPABASE_ANON_KEY is the PUBLIC key and is meant to be inside the page.
         // NEVER put the "service_role" / secret key anywhere in this file.
-        const SUPABASE_URL = 'https://nycegnylfzeegpsejbbt.supabase.co';   // <-- paste the Project URL of the NEW Supabase project between the quotes
-        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im55Y2VnbnlsZnplZWdwc2VqYmJ0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQyNTEyMjcsImV4cCI6MjEwOTgyNzIyN30.Ye4-S25nDPDBLwW9jfy2O4LwXLzu7wEh0oUkplIr5W4';   // <-- paste the anon public key of the NEW Supabase project between the quotes
+        const SUPABASE_URL = 'https://umfqcxzfdoumxvbfuvkw.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVtZnFjeHpmZG91bXh2YmZ1dmt3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTE1MTIzODksImV4cCI6MjEwNzA4ODM4OX0.iGzlpo8JL8VaInXuu-GXfdzQlMqrwmq-f5GIsyl13SU';
         const SERVER_MODE = !!(SUPABASE_URL && SUPABASE_ANON_KEY);
         const DEFAULT_FAQ = [
             { q: 'How long does delivery take?', a: 'Every mug is printed to order. Printing and packing usually take 2-5 business days, and then the mug is shipped to your address. Delivery time depends on your country, and the shipping options and costs are shown at checkout. You will receive an email confirmation after your order.' },
@@ -1658,7 +1688,7 @@
                 size15: { enabled: false, extra: 0 },
                 variants: [{ name: 'Classic White', color: '#ffffff', images: [PLACEHOLDER_MUG_IMAGE], images15: [] }]
             });
-            return [];   // this site sells one mug only; more can be added from the admin if you ever want
+            return [mk('p2', 'ISRAEL FLAG MUG'), mk('p3', 'SUPPORT ISRAEL MUG')];
         }
 
         function ensureExtraProducts(st) {
@@ -3158,6 +3188,7 @@
         function updateDesignerButton() {
             const b = document.getElementById('designHeaderBtn');
             if (b) b.classList.toggle('hidden', !designerEnabled());
+            const dp = document.getElementById('designPromo'); if (dp) dp.classList.toggle('hidden', !designerEnabled());
         }
         function openDesigner() {
             if (!designerEnabled()) return;
@@ -4757,7 +4788,7 @@
                     }
                     return actions.order.create({
                         purchase_units: [{
-                            description: 'AnthemCup order',
+                            description: 'IsraelAnthemCup order',
                             amount: { currency_code: 'USD', value: total.toFixed(2) }
                         }]
                     });
@@ -4857,7 +4888,7 @@
             return fetch(ORDER_EMAIL_ENDPOINT, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-                body: JSON.stringify({ access_key: key, subject: subject, from_name: 'AnthemCup Store', message: message }),
+                body: JSON.stringify({ access_key: key, subject: subject, from_name: 'IsraelAnthemCup Store', message: message }),
                 keepalive: true
             }).then(res => res.json().catch(() => ({})).then(j => {
                 if (!(res.ok && j.success)) throw new Error(j.message || ('HTTP ' + res.status));
@@ -4883,6 +4914,7 @@
                 setOrderNotify(order.id, 'skipped', '');
                 return Promise.resolve();
             }
+            sendCustomerConfirmation(order);
             const subject = 'New order ' + order.id + ' - ' + fmtMoney(order.totals.total) + ' (' + order.payment.method + ') - ' + order.customer.name;
             const message = buildOrderEmailText(order, dbSaved);
             const attempt = n => postOrderEmail(key, subject, message)
@@ -4893,6 +4925,64 @@
                     setOrderNotify(order.id, 'failed', String((err && err.message) || err));
                 });
             return attempt(1);
+        }
+
+        function saveCustomerEmailToggle() {
+            const ce = document.getElementById('adminCustomerEmail');
+            storeState.customerEmailOff = !(ce && ce.checked);
+            saveStoreState(storeState);
+        }
+
+        // ---- Confirmation email to the customer (Web3Forms Autoresponder sends it to the "email" field) ----
+        function storeBrandPlain() {
+            try { return String((storeState.texts && storeState.texts.brandName) || 'Our Store').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim() || 'Our Store'; } catch (e) { return 'Our Store'; }
+        }
+        function buildCustomerEmailText(o) {
+            const c = o.customer || {}, t = o.totals || {}, pay = o.payment || {}, pp = pay.paypal;
+            const first = String(c.name || '').trim().split(/\s+/)[0] || 'there';
+            const L = [];
+            L.push('Thank you for your order, ' + first + '! 🎄', 'We received it and will start working on it right away.', '');
+            L.push('ORDER ' + o.id, 'Placed: ' + new Date(o.createdAt).toLocaleString(), '');
+            L.push('ITEMS');
+            (o.items || []).forEach(i => {
+                L.push(i.quantity + 'x ' + i.title + ' (' + i.variant + (i.size ? ' · ' + i.size : '') + ') - ' + fmtMoney(Number(i.unitPrice) * Number(i.quantity)));
+                if (i.custom) L.push('   Your own design - we will print it exactly as you placed it.');
+            });
+            L.push('');
+            if (Number(t.promoDiscount) > 0) L.push((t.promoSingle ? 'White mug single price' : 'White mug promo (' + Number(t.promoPercent || 0) + '% off)') + ': -' + fmtMoney(t.promoDiscount));
+            if (Number(t.discount) - Number(t.promoDiscount || 0) > 0.004) L.push('Bulk discount: -' + fmtMoney(Number(t.discount) - Number(t.promoDiscount || 0)));
+            L.push('Shipping: ' + fmtMoney(t.shipping) + (t.shippingNote ? ' (' + t.shippingNote + ')' : ''));
+            if (Number(t.donation) > 0) L.push('Donation: ' + fmtMoney(t.donation));
+            L.push('TOTAL: ' + fmtMoney(t.total), '');
+            L.push('PAYMENT', 'Paid with: ' + (pay.method || '') + (pay.network ? ' - ' + pay.network : ''));
+            if (pay.txId) L.push((pay.method === 'PayPal' ? 'PayPal Transaction ID: ' : 'Transaction ID: ') + pay.txId);
+            if (pp && pp.status) L.push('Payment status: ' + pp.status);
+            if (pay.method && pay.method !== 'PayPal') L.push('Crypto payments are confirmed by us after the transfer is verified.');
+            L.push('', 'YOUR DETAILS', 'Name: ' + (c.name || ''), 'Email: ' + (c.email || ''), 'Phone: ' + (c.phone || '-'));
+            L.push('Ship to: ' + [c.street, [c.city, c.state].filter(Boolean).join(', ') + (c.zip ? ' ' + c.zip : ''), c.destination].filter(Boolean).join(', '));
+            if (c.fullAddress) L.push('Address note: ' + c.fullAddress);
+            L.push('', 'Printing and packing usually take 2-5 business days, then your order ships.');
+            const ce = (storeState.texts && storeState.texts.contactEmail) || '';
+            L.push('Questions? Contact us' + (ce ? ' at ' + ce : '') + ' and mention your order number.', '', 'Merry Christmas and thank you for shopping with ' + storeBrandPlain() + '! 🎁');
+            return L.join('\n');
+        }
+        function sendCustomerConfirmation(order) {
+            try {
+                const key = (storeState.orderNotifyKey || '').trim();
+                const em = String((order.customer && order.customer.email) || '').trim();
+                if (!key || storeState.customerEmailOff === true || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)) return Promise.resolve();
+                const body = {
+                    access_key: key, email: em, name: String(order.customer.name || ''),
+                    subject: 'Your order ' + order.id + ' is confirmed - ' + storeBrandPlain(),
+                    from_name: storeBrandPlain(), message: buildCustomerEmailText(order)
+                };
+                const send = n => fetch(ORDER_EMAIL_ENDPOINT, {
+                    method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                    body: JSON.stringify(body), keepalive: true
+                }).then(r => r.json().catch(() => ({})).then(j => { if (!(r.ok && j.success)) throw new Error(j.message || ('HTTP ' + r.status)); }))
+                  .catch(err => { if (n < 2) return new Promise(r => setTimeout(r, 2000)).then(() => send(n + 1)); console.error('Customer email failed:', err); });
+                return send(1);
+            } catch (e) { console.error(e); return Promise.resolve(); }
         }
 
         function resendOrderEmail(id) {
@@ -4908,6 +4998,7 @@
         function renderPublishTab() {
             const el = document.getElementById('adminOrderNotifyKey');
             if (el) el.value = storeState.orderNotifyKey || '';
+            const ce = document.getElementById('adminCustomerEmail'); if (ce) ce.checked = storeState.customerEmailOff !== true;
             const srvBox = document.getElementById('publishServerBox');
             const expBox = document.getElementById('publishExportBox');
             const pwItem = document.getElementById('checklistPasswordItem');
@@ -4944,7 +5035,7 @@
                 return;
             }
             setOrderNotifyStatus('Sending test email...', true);
-            postOrderEmail(key, 'Test email from your AnthemCup admin', 'If you can read this, order notifications are set up correctly.')
+            postOrderEmail(key, 'Test email from your IsraelAnthemCup admin', 'If you can read this, order notifications are set up correctly.')
                 .then(() => setOrderNotifyStatus('Test email sent. Check your inbox (and spam folder).', true))
                 .catch(err => setOrderNotifyStatus('Could not send: ' + ((err && err.message) || err), false));
         }
@@ -6447,10 +6538,6 @@
             const box = document.getElementById('reviewsContainer');
             if (!box) return;
             const all = storeState.reviews.map(normReview).concat(customerReviews);
-            // no reviews yet: hide the star rating and the empty carousel (the "write a review" button stays)
-            const avgRow = document.getElementById('reviewsAvgText') && document.getElementById('reviewsAvgText').parentElement;
-            if (avgRow) avgRow.classList.toggle('hidden', all.length === 0);
-            if (box.parentElement) box.parentElement.classList.toggle('hidden', all.length === 0);
             box.innerHTML = '';
             all.forEach(rev => {
                 const card = document.createElement('div');
@@ -6698,5 +6785,125 @@
         // Failsafe: never leave the page hidden, whatever happens
         setTimeout(function () { document.body.classList.remove('settings-loading'); }, 5000);
     </script>
+
+<script>
+/* Admin quality-of-life: every change is saved automatically; ESC or a click outside the panel closes the admin. */
+(function () {
+  try {
+    var modal = document.getElementById('adminModal');
+    if (!modal) return;
+    var SKIP_TABS = { ordersTab: 1, visitsTab: 1, securityTab: 1, addMugTab: 1 };
+    var queue = [], timer = null, lastTyped = 0;
+
+    var ind = document.createElement('div');
+    ind.id = 'autosaveIndicator';
+    ind.style.cssText = 'position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:95;padding:9px 18px;border-radius:999px;font:700 13px system-ui,sans-serif;color:#fff;box-shadow:0 8px 24px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .25s;max-width:92vw;text-align:center';
+    document.body.appendChild(ind);
+    var hideT = null;
+    function show(msg, ok) {
+      ind.textContent = msg; ind.style.background = ok ? '#059669' : '#d97706'; ind.style.opacity = '1';
+      clearTimeout(hideT); hideT = setTimeout(function () { ind.style.opacity = '0'; }, ok ? 1800 : 6000);
+    }
+
+    function buttonFor(field) {
+      var node = field.parentElement;
+      while (node && node !== modal) {
+        var btns = Array.prototype.slice.call(node.querySelectorAll('button[onclick^="save"]'));
+        if (btns.length) {
+          var after = btns.filter(function (b) { return field.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING; });
+          return after.length ? after[0] : btns[btns.length - 1];
+        }
+        node = node.parentElement;
+      }
+      return null;
+    }
+
+    function runSilently(btn) {
+      var a = window.alert, c = window.confirm, p = window.prompt, msgs = [];
+      window.alert = function (m) { msgs.push(String(m)); };
+      window.confirm = function () { return false; };
+      window.prompt = function () { return null; };
+      try { btn.click(); } catch (e) { msgs.push('Error: ' + e.message); }
+      finally { window.alert = a; window.confirm = c; window.prompt = p; }
+      return msgs;
+    }
+
+    function runQueue() {
+      timer = null;
+      if (!queue.length) return;
+      var btns = queue.slice(); queue = [];
+      var ae = document.activeElement, aeId = ae && ae.id, selS = null, selE = null;
+      try { selS = ae.selectionStart; selE = ae.selectionEnd; } catch (e) {}
+      var problems = [];
+      btns.forEach(function (b) {
+        if (!document.body.contains(b)) return;
+        runSilently(b).forEach(function (m) {
+          if (!/success|saved|updated|reset/i.test(m) || /not saved|nothing was saved/i.test(m)) problems.push(m);
+        });
+      });
+      if (aeId && document.activeElement !== ae) {
+        var again = document.getElementById(aeId);
+        if (again && again.focus) { again.focus(); try { again.setSelectionRange(selS, selE); } catch (e) {} }
+      }
+      if (problems.length) show('⚠ Not saved: ' + problems[0], false);
+      else show('✓ Saved automatically', true);
+    }
+
+    function schedule(immediate) {
+      clearTimeout(timer);
+      if (immediate) { runQueue(); return; }
+      var wait = Math.max(350, 900 - (Date.now() - lastTyped));
+      timer = setTimeout(runQueue, wait);
+    }
+
+    modal.addEventListener('input', function () { lastTyped = Date.now(); }, true);
+    modal.addEventListener('change', function (e) {
+      var f = e.target;
+      if (!f || !f.closest) return;
+      if (f.type === 'file' || f.type === 'password' || f.type === 'button' || f.getAttribute('data-noautosave') !== null) return;
+      if (/^(mugFinderInput|showcaseMugSearch|newMugName|newMugPrice|newVariantName_.*)$/.test(f.id || '')) return;
+      var tab = f.closest('[id$="Tab"]');
+      if (tab && SKIP_TABS[tab.id]) return;
+      var b = buttonFor(f);
+      if (!b) return;
+      if (queue.indexOf(b) < 0) queue.push(b);
+      schedule(false);
+    }, true);
+
+    function flush() {
+      try { var ae = document.activeElement; if (ae && modal.contains(ae) && ae.blur) ae.blur(); } catch (e) {}
+      if (queue.length) schedule(true);
+    }
+    window.flushAdminAutosave = flush;
+
+    function overlayAbove() {
+      var ids = ['adminLoginModal', 'reviewModal', 'photoLightbox', 'calibModal', 'designPreviewModal', 'designUploadOverlay'];
+      for (var i = 0; i < ids.length; i++) {
+        var e = document.getElementById(ids[i]);
+        if (e && !e.classList.contains('hidden') && getComputedStyle(e).display !== 'none') return true;
+      }
+      return false;
+    }
+    function closeAdmin() {
+      if (modal.classList.contains('hidden')) return;
+      flush();
+      if (typeof toggleAdminModal === 'function') toggleAdminModal();   // same as the X button: closes, stays logged in
+    }
+    document.addEventListener('keydown', function (e) {
+      if (e.key !== 'Escape' || e.defaultPrevented) return;
+      if (modal.classList.contains('hidden') || overlayAbove()) return;
+      e.preventDefault(); closeAdmin();
+    });
+    var downOnBackdrop = false;
+    modal.addEventListener('mousedown', function (e) { downOnBackdrop = (e.target === modal); });
+    modal.addEventListener('click', function (e) {
+      if (e.target === modal && downOnBackdrop) closeAdmin();
+      downOnBackdrop = false;
+    });
+    var x = modal.querySelector('button[onclick="toggleAdminModal()"]');
+    if (x) x.title = 'Close (Esc)';
+  } catch (err) { console.error('admin autosave init failed', err); }
+})();
+</script>
 </body>
 </html>
