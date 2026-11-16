@@ -1853,6 +1853,7 @@
         function promoOf(d) { return (d && d.promo && d.promo.enabled) ? d.promo : null; }
         function cartItemPromoEligible(it) {
             if (!it) return false;
+            if ((it.size || '11') === '15') return false;   // the white-mug offer is for the 11 oz mug only
             if (it.custom) return variantPromoEligible({ name: it.variant });   // a design mug in the white color
             const idx = productIndexById(it.productId || 'p1');
             if (idx < 0) return false;
@@ -3723,7 +3724,7 @@
             const promoNote = document.getElementById('designPromoNote');
             if (promoNote) {
                 const promoCountries = (storeState.destinations || []).filter(promoOf).map(d => d.name);
-                const show = !!col && promoCountries.length > 0 && variantPromoEligible({ name: col.name });
+                const show = !!col && designSize !== '15' && promoCountries.length > 0 && variantPromoEligible({ name: col.name });
                 promoNote.classList.toggle('hidden', !show);
                 if (show) promoNote.textContent = '⭐ ' + col.name + ' mugs: ' + storeState.whitePromo.percent + '% off when you buy 2 or more (a single one is $' + Number(storeState.whitePromo.singlePrice || 14.90).toFixed(2) + ') for ' + promoCountries.join(', ') + ' - applied at checkout when you choose that destination.';
             }
